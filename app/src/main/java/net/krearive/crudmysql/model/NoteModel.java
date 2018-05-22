@@ -1,13 +1,22 @@
-package net.krearive.crudmysql;
+package net.krearive.crudmysql.model;
+
+import com.google.gson.annotations.SerializedName;
 
 /**
  * Created by idn on 5/22/2018.
  */
 
 public class NoteModel {
+    @SerializedName("id")
     private String id;
+
+    @SerializedName("pengeluaran")
     private String pengeluaran;
+
+    @SerializedName("keterangan")
     private String keterangan;
+
+    @SerializedName("tanggal")
     private String tanggal;
 
     //constructor
